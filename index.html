@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo</title>
+  <link rel="stylesheet" href="styles.css">
+
+</head>
+<body>
+  <div class="capa">
+    <img id="logo-capa" src="/Nova pasta/capa3.png" alt="">
+    <img id="logotipo" src="/Nova pasta/logotipo.png" alt="">
+    <h3>CATÁLOGO</h3>
+  </div>
+ 
+  <div class="container">
+    <div class="pesquisa">
+      <input type="text" id="searchInput" placeholder="Buscar produtos..." onkeyup="searchProducts()">
+    </div>
+    <div id="catalog">
+      <div class="product">
+        <div class="bloco1">
+          <h2>FREIO V.BRACK NYLON</h2>
+          <img  src="/Nova pasta/freio v brack nylon.png" alt="">
+        </div>
+        <div class="bloco2">
+          <p>R$29,99</p>
+        </div>
+        <img class="preco" src="/Nova pasta/Screenshot_8-removebg-preview.png" alt="">
+      </div>
+      <div class="product">
+        <div class="bloco1">
+          <h2>CAMARA AR 26 PIRELLI</h2>
+          <img  src="/Nova pasta/CAMARA 26 PIRELLI.png" alt="">
+        </div>
+        <div class="bloco2">
+          <p>R$19,99</p>
+        </div>
+        <img class="preco" src="/Nova pasta/Screenshot_8-removebg-preview.png" alt="">
+      </div>
+      <div class="product">
+        <div class="bloco1">
+          <h2>CAMBIO TRASEIRO 6V PONTEIRA PTO</h2>
+          <img  src="/Nova pasta/CAMBIO TRASEIRO 6V PONTEIRA PTO.png" alt="">
+        </div>
+        <div class="bloco2">
+          <p>R$29,99</p>
+        </div>
+        <img class="preco" src="/Nova pasta/Screenshot_8-removebg-preview.png" alt="">
+      </div>
+      <div class="product">
+        <div class="bloco1">
+          <h2>CATRACA 7 VELOCIDADES INDEX EVOLO</h2>
+          <img  src="/Nova pasta/CATRACA 7 VELOCIDADES INDEX EVOLO.png" alt="">
+        </div>
+        <div class="bloco2">
+          <p>R$39,99</p>
+        </div>
+        <img class="preco" src="/Nova pasta/Screenshot_8-removebg-preview.png" alt="">
+      </div>
+      <!-- Adicione mais produtos conforme necessário -->
+    </div>
+  </div>
+  <button id="zap">
+    <img src="/Nova pasta/zap3.png" alt="">
+  </button>
+
+  <script>
+    document.getElementById('zap').addEventListener('click', function() {
+        var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
+        var whatsappUrl = isMobile ? 'whatsapp://send?phone=+5581994348818' : 'https://web.whatsapp.com/send?phone=+5581994348818';
+        window.location.href = whatsappUrl;
+    });
+</script>
+  
+  <script src="script.js"></script>
+</body>
+</html>
