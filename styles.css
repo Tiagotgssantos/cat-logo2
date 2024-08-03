@@ -90,8 +90,8 @@ h3 {
 }
 
 .product {
-  flex: 1 1 calc(20% - 10px);
-  max-width: calc(20% - 10px);
+  flex: 1 1 calc(26% - 40px);
+  max-width: calc(26% - 40px);
   box-sizing: border-box;
   padding: 15px 20px;
   background-color: #fff;
@@ -155,7 +155,7 @@ h3 {
 }
 
 /* Media Queries para responsividade */
-@media (max-width: 1284px) {
+@media (max-width: 1000px) {
   #catalog{
     gap: 10px;
     justify-content:center;
