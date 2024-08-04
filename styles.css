@@ -25,8 +25,8 @@ body {
 #logotipo {
   position: absolute;
   top: 20%;
-  left: 5%;
-  width: 15%;
+  left: 3%;
+  width: 150px;
   height: auto;
 }
 
@@ -35,7 +35,7 @@ h3 {
   text-align: center;
   color: #e9e2e2;
   top: 20%;
-  left: 85%;
+  right: 10%;
   font-size: 1.6em;
 }
 
@@ -50,7 +50,7 @@ h3 {
 }
 
 #zap img {
-  width: 150px;
+  width: 120px;
   transition: transform 0.3s ease-in-out;
 }
 #zap:hover{
@@ -127,7 +127,7 @@ h3 {
   display: block;
   width: 100%;
   position: relative;
-  padding-bottom: 30px;
+  padding-bottom: 10%;
 }
 
 .product .bloco2 p {
@@ -135,7 +135,7 @@ h3 {
   color: #eae8e8;
   font-weight: 500;
   font-size: 1.5em;
-  left: 9%;
+  left: 4%;
   z-index: 2;
   margin: 0;
   margin-bottom: 5px;
@@ -175,9 +175,6 @@ h3 {
     min-height: 200px;
   }
 
-  h3 {
-    left: 70%;
-  }
   .product .bloco2 p{
     font-size: 1.5em;
   }
@@ -185,12 +182,23 @@ h3 {
   #zap {
     right: 1%;
   }
+  #zap img{
+    width: 100px;
+  }
 }
 
 @media (max-width: 808px) {
+  #logo-capa {
+    width: 100%;
+  height: 150px;
+  object-fit: cover;
+  /* Mantém a proporção da imagem e garante que ela preencha o contêiner */
+  object-position:left center;
+  /* Centraliza a imagem no contêiner */
+  }
   .product {
-    flex: 1 1 calc(100% - 70px);
-    max-width: calc(100% - 90px);
+    flex: 1 1 calc(100% - 10px);
+    max-width: calc(100% - 10px);
   }
 
   .product .bloco1 img {
@@ -198,7 +206,7 @@ h3 {
   }
 
   #logotipo {
-    width: 25%;
+    width: 200px;
     left: 2%;
   }
 
@@ -207,7 +215,6 @@ h3 {
   }
 
   h3 {
-    left: 70%;
     font-size: 1.2em;
   }
 
@@ -220,23 +227,19 @@ h3 {
   }
 
   #zap img {
-    width: 130px;
+    width: 100px;
   }
 }
 
 @media (max-width: 544px) {
   #logotipo {
-    width: 24%;
-    left: 2%;
+    width: 130px;
+    left: 4%;
+    top: 25%;
   }
 
   #logo-capa {
     min-height: 110px;
-  }
-
-  h3 {
-    top: 0%;
-    left: 60%;
   }
 
   .product .bloco2{
