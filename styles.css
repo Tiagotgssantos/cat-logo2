@@ -38,6 +38,21 @@ h3 {
   right: 10%;
   font-size: 1.6em;
 }
+#inst{
+  border: none;
+  cursor: pointer;
+  position: fixed;
+  bottom: 25%;
+  border: none;
+  background: none;
+  right: 3%;
+}
+#inst img{
+  width: 75px;
+}
+#inst img:hover{
+  scale: 1.05;
+}
 
 #zap {
   position: fixed;
@@ -50,7 +65,7 @@ h3 {
 }
 
 #zap img {
-  width: 120px;
+  width: 100px;
   transition: transform 0.3s ease-in-out;
 }
 #zap:hover{
@@ -177,6 +192,14 @@ h3 {
 
   .product .bloco2 p{
     font-size: 1.5em;
+  }
+
+  #inst{
+    bottom: 22%;
+    right: 2%;
+  }
+  #inst img{
+    width: 75px;
   }
 
   #zap {
