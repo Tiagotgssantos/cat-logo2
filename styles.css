@@ -5,15 +5,20 @@ body {
   background-color: #f4f4f4;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 .capa {
   width: 100%;
+  height: 200px;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
+  background-color: #bb2948;
+  margin-bottom: 20px;
+  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.3);
 }
 
 #logo-capa {
@@ -25,8 +30,8 @@ body {
 #logotipo {
   position: absolute;
   top: 20%;
-  left: 3%;
-  width: 150px;
+  left: 10%;
+  width: 140px;
   height: auto;
 }
 
@@ -37,6 +42,27 @@ h3 {
   top: 20%;
   right: 10%;
   font-size: 1.6em;
+  border-bottom: 1px solid white;
+}
+#menu{
+  position: absolute;
+  right: 10%;
+  bottom: 0.5%;
+}
+
+#menu ul{
+  display: flex;
+}
+#menu ul li{
+  list-style: none;
+  margin: 10px;
+  color: rgb(192, 192, 192);
+  cursor:pointer;
+  font-size: 1.3em;
+  position: relative;
+}
+#menu ul li:hover{
+  color: white;
 }
 
 #redes-sociais {
@@ -220,8 +246,8 @@ h3 {
   }
 
   #logotipo {
-    width: 200px;
     left: 2%;
+    top: 5%;
   }
 
   #logo-capa {
@@ -244,9 +270,7 @@ h3 {
 
 @media (max-width: 544px) {
   #logotipo {
-    width: 130px;
     left: 4%;
-    top: 25%;
   }
 
   #logo-capa {
