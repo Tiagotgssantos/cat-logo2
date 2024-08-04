@@ -38,14 +38,19 @@ h3 {
   right: 10%;
   font-size: 1.6em;
 }
+
+#redes-sociais {
+  position: fixed;
+  bottom: 10%;
+  display: flex;
+  flex-direction: column;
+  right: 2%;
+}
+
+
 #inst{
   border: none;
-  cursor: pointer;
-  position: fixed;
-  bottom: 27%;
-  border: none;
   background: none;
-  right: 2.8%;
 }
 #inst img{
   width: 75px;
@@ -55,13 +60,8 @@ h3 {
 }
 
 #zap {
-  position: fixed;
-  bottom: 10%;
-  border-radius: 10%;
-  right: 2%;
   border: none;
   background: none;
-  cursor: pointer;
 }
 
 #zap img {
@@ -71,6 +71,7 @@ h3 {
 #zap:hover{
   scale: 1.05;
 }
+
 
 .container {
   width: 80%;
@@ -101,7 +102,7 @@ h3 {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
-  justify-content:flex-start;
+  justify-content: flex-start;
 }
 
 .product {
@@ -171,10 +172,11 @@ h3 {
 
 /* Media Queries para responsividade */
 @media (max-width: 1000px) {
-  #catalog{
+  #catalog {
     gap: 10px;
-    justify-content:center;
+    justify-content: center;
   }
+
   .product {
     flex: 1 1 calc(50% - 100px);
     max-width: calc(50% - 100px);
@@ -190,35 +192,22 @@ h3 {
     min-height: 200px;
   }
 
-  .product .bloco2 p{
+  .product .bloco2 p {
     font-size: 1.5em;
   }
 
-  #inst{
-    bottom: 22%;
-    right: 2%;
-  }
-  #inst img{
-    width: 75px;
-  }
-
-  #zap {
-    right: 1%;
-  }
-  #zap img{
-    width: 100px;
-  }
 }
 
 @media (max-width: 808px) {
   #logo-capa {
     width: 100%;
-  height: 150px;
-  object-fit: cover;
-  /* Mantém a proporção da imagem e garante que ela preencha o contêiner */
-  object-position:left center;
-  /* Centraliza a imagem no contêiner */
+    height: 150px;
+    object-fit: cover;
+    /* Mantém a proporção da imagem e garante que ela preencha o contêiner */
+    object-position: left center;
+    /* Centraliza a imagem no contêiner */
   }
+
   .product {
     flex: 1 1 calc(100% - 10px);
     max-width: calc(100% - 10px);
@@ -241,17 +230,14 @@ h3 {
     font-size: 1.2em;
   }
 
-  .product .bloco2{
+  .product .bloco2 {
     padding-bottom: 60px;
   }
 
-  .product .bloco2 p{
+  .product .bloco2 p {
     font-size: 2.0em;
   }
 
-  #zap img {
-    width: 100px;
-  }
 }
 
 @media (max-width: 544px) {
@@ -265,10 +251,11 @@ h3 {
     min-height: 110px;
   }
 
-  .product .bloco2{
+  .product .bloco2 {
     padding-bottom: 40px;
   }
-  .product .bloco2 p{
+
+  .product .bloco2 p {
     font-size: 1.8em;
   }
 }
@@ -277,9 +264,5 @@ h3 {
   h3 {
     font-size: 1em;
     left: 50%;
-  }
-
-  #zap img {
-    width: 120px;
   }
 }
