@@ -53,7 +53,8 @@ h3 {
   background: none;
 }
 #inst img{
-  width: 55px;
+  width: 80px;
+  cursor: pointer;
 }
 #inst img:hover{
   scale: 1.05;
@@ -66,6 +67,7 @@ h3 {
 
 #zap img {
   width: 75px;
+  cursor: pointer;
   transition: transform 0.3s ease-in-out;
 }
 #zap:hover{
