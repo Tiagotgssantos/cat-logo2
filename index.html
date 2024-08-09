@@ -15,30 +15,52 @@
       <img id="logo-capa" src="/Nova pasta/capa3.png" alt="">
     -->
     <img id="logotipo" src="/Nova pasta/logotipo.png" alt="">
-   
+
 
     <div class="capa">
       <img id="logotipo" src="/Nova pasta/logotipo.png" alt="Logotipo">
-  
+
       <div id="menu">
-          <ul>
-              <li id="varejoicon"> 
-                  <img src="/Nova pasta/icon/carrinho-de-compras (1).png" alt="Varejo Icon">
-                  <span>Varejo</span>
-              </li>
-              <li>
-                  <img src="/Nova pasta/icon/atacado.png" alt="Atacado Icon">
-                  <span>Atacado</span>
-              </li>
-              <li>
-                  <img src="/Nova pasta/icon/promocao.png" alt="Promoção Icon">
-                  <span>Promoções</span>
-              </li>
-          </ul>
+        <ul>
+          <li id="varejoicon">
+            <img src="/Nova pasta/icon/carrinho-de-compras (1).png" alt="Varejo Icon">
+            <span>Varejo</span>
+          </li>
+          <li>
+            <img src="/Nova pasta/icon/atacado.png" alt="Atacado Icon">
+            <span>Atacado</span>
+          </li>
+        </ul>
       </div>
+    </div>
+  </div>
+
+  <div id="carrossel" class="carousel">
+    <div class="carousel-container">
+      <div class="carousel-slide">
+        <img src="/promocao/promocao01_53.png" alt="Imagem 1">
+      </div>
+      <div class="carousel-slide">
+        <img src="/slide/gti laranjaPreto.png" alt="Imagem 2">
+      </div>
+      <div class="carousel-slide">
+        <img src="/slide/cambio traseiro.png" alt="Imagem 3">
+      </div>
+      <!-- Clones dos slides para loop infinito -->
+      <div class="carousel-slide">
+        <img src="/slide/bike 16 vrde.png" alt="Imagem 1">
+      </div>
+      <div class="carousel-slide">
+        <img src="/slide/gti laranjaPreto.png" alt="Imagem 2">
+      </div>
+      <div class="carousel-slide">
+        <img src="/slide/capacete.png" alt="Imagem 3">
+      </div>
+    </div>
+    <button class="carousel-button prev" onclick="prevSlide()">&#10094;</button>
+    <button class="carousel-button next" onclick="nextSlide()">&#10095;</button>
   </div>
   
-  </div>
 
   <div class="container">
     <div class="pesquisa">
@@ -105,16 +127,16 @@
     });
   </script>
   <script>
-    document.getElementById('inst').addEventListener('click', function() {
-        // Tentar abrir o aplicativo Instagram
-        window.location.href = 'instagram://user?username=tbiketgs';
+    document.getElementById('inst').addEventListener('click', function () {
+      // Tentar abrir o aplicativo Instagram
+      window.location.href = 'instagram://user?username=tbiketgs';
 
-        // Se o aplicativo não estiver instalado, abrir o site
-        setTimeout(function() {
-            window.open('https://www.instagram.com/tbiketgs?igsh=MXQ1NDhuZWh1YXV4aQ==', '_blank');
-        }, 1000); // Espera 1 segundo para ver se o aplicativo foi aberto
+      // Se o aplicativo não estiver instalado, abrir o site
+      setTimeout(function () {
+        window.open('https://www.instagram.com/tbiketgs?igsh=MXQ1NDhuZWh1YXV4aQ==', '_blank');
+      }, 1000); // Espera 1 segundo para ver se o aplicativo foi aberto
     });
-</script>
+  </script>
 
   <script src="script.js"></script>
 </body>

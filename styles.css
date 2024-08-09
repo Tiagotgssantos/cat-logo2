@@ -10,7 +10,7 @@ body {
 
 .capa {
   width: 100%;
-  height: 200px;
+  height: 100px;
   position: relative;
   display: flex;
   justify-content: center;
@@ -31,7 +31,7 @@ body {
   position: absolute;
   top: 20%;
   left: 10%;
-  width: 200px;
+  width: 110px;
   height: auto;
 }
 
@@ -64,7 +64,7 @@ h3 {
   padding: 10px 20px; /* Padding ajustado para um visual mais clean */
   color: #f3f3f3;
   cursor: pointer;
-  font-size: 1.1em; /* Reduz o tamanho da fonte para um visual mais equilibrado */
+  font-size: 1em; /* Reduz o tamanho da fonte para um visual mais equilibrado */
   display: flex;
   align-items: center;
   justify-content: center; /* Centraliza o texto e ícone */
@@ -130,6 +130,66 @@ h3 {
   scale: 1.05;
 }
 
+/*carrossel*/
+.carousel {
+  position: relative;
+  width: 100%;
+  max-width: 1000px; /* Ajuste conforme necessário */
+  margin: auto;
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+.carousel-container {
+  display: flex;
+  transition: transform 0.5s ease; /* Suaviza a transição entre slides */
+}
+
+.carousel-slide {
+  min-width: 100%; /* Mantém a largura de cada slide para 100% do contêiner */
+  box-sizing: border-box;
+  display: flex; /* Centraliza o conteúdo */
+  align-items: center; /* Alinha verticalmente */
+  justify-content: center; /* Alinha horizontalmente */
+}
+
+.carousel-slide img {
+  max-width: 100%; /* Garante que a imagem não ultrapasse a largura do slide */
+  height: auto; /* Mantém a proporção da imagem */
+  max-height: 140px; /* Define uma altura máxima para evitar que a imagem fique muito alta */
+  object-fit: cover; /* Garante que a imagem cubra o slide sem distorcer */
+  transition: transform 0.5s ease; /* Adiciona transição para o efeito de zoom */
+}
+
+.carousel-slide.zoom img {
+  transform: scale(1.1); /* Aplica o efeito de zoom quando a imagem está no centro */
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  width: 35px;
+  height: 35px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 20px;
+  transform: translateY(-50%);
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.carousel-button.prev {
+  left: 10px;
+}
+
+.carousel-button.next {
+  right: 10px;
+}
+
+
+
 
 .container {
   width: 80%;
@@ -164,7 +224,6 @@ h3 {
 
 #searchInput {
   width: 100%;
-  
   padding: 12px 20px;
   border: none;
   border-radius: 25px;
@@ -218,13 +277,20 @@ h3 {
 
 
 .product h2 {
-  font-size: 1.35em;
+  font-size: 1.1em;
   margin: 0;
   color: #f56858;
 }
 
+.product .bloco1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 .product .bloco1 img {
-  width: 90%;
+  width: 60%;
   height: auto;
   border-radius: 4px;
   margin: 10px auto;
@@ -273,17 +339,16 @@ h3 {
     max-width: calc(50% - 100px);
   }
 
-  #logotipo {
-    left: 1%;
-    top: 15%;
-  }
-
   #logo-capa {
     min-height: 200px;
   }
 
   .product .bloco2 p {
     font-size: 1.5em;
+  }
+ 
+  #menu ul li img {
+    width: 17px;
   }
 
 }
@@ -308,9 +373,8 @@ h3 {
   }
 
   #logotipo {
-    width: 130px;
     left: 2%;
-    top: 33%;
+    width: 95px;
   }
 
   #logo-capa {
@@ -322,17 +386,20 @@ h3 {
   }
 
   #menu {
-    right: 3%;
+    right: 5%;
   }
 
   #menu ul{
-
     flex-direction: column;
   }
   
   #menu ul li {
     margin: 3px;
-    padding: 10px 6px;
+    padding: 6px 6px;
+  }
+  #menu ul li img{
+    width: 18px;
+    margin: 0 3px;
   }
 
   .product .bloco2 {
@@ -354,11 +421,7 @@ h3 {
 }
 
 @media (max-width: 544px) {
-  #logotipo {
-    left: 10%;
-    top: 32%;
-  }
-
+ 
   #logo-capa {
     min-height: 110px;
   }
