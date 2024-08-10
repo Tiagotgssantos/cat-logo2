@@ -256,7 +256,6 @@ h3 {
   flex: 1 1 calc(26% - 40px);
   max-width: calc(26% - 40px);
   box-sizing: border-box;
-  padding: 15px 20px;
   background-color: #fff;
   border: 1px solid #ddd;
   border-radius: 10px; /* Arredondamento mais acentuado */
@@ -267,7 +266,7 @@ h3 {
   flex-direction: column;
   justify-content: space-between;
   position: relative;
-  margin-top: 20px;
+  margin-top: 2px;
 }
 
 .product:hover {
@@ -277,9 +276,10 @@ h3 {
 
 
 .product h2 {
-  font-size: 1.1em;
+  font-size: 1em;
   margin: 0;
-  color: #f56858;
+  color: #383737;
+  margin-bottom: 20px;
 }
 
 .product .bloco1{
@@ -287,31 +287,32 @@ h3 {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin: 20px 10px 0 10px;
+  text-align: center;
 }
 
 .product .bloco1 img {
   width: 60%;
-  height: auto;
   border-radius: 4px;
-  margin: 10px auto;
 }
 
 .product .bloco2 {
-  display: block;
-  width: 100%;
-  position: relative;
-  padding-bottom: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #bb2948;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3), 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product .bloco2 .p1{
+  text-decoration: line-through;
+  color: rgba(242, 239, 239, 0.7);
+  font-size: 1em;
 }
 
 .product .bloco2 p {
-  position: absolute;
   color: #eae8e8;
-  font-weight: 500;
-  font-size: 1.5em;
-  left: 4%;
-  z-index: 2;
-  margin: 0;
-  margin-bottom: 5px;
+  font-size: 1em;
   letter-spacing: 3px;
   font-family: "Roboto", sans-serif;
   font-weight: 600;
@@ -344,7 +345,7 @@ h3 {
   }
 
   .product .bloco2 p {
-    font-size: 1.5em;
+    font-size: 1em;
   }
  
   #menu ul li img {
@@ -364,8 +365,8 @@ h3 {
   }
 
   .product {
-    flex: 1 1 calc(100% - 10px);
-    max-width: calc(100% - 10px);
+    flex: 1 1 calc(50% - 10px);
+    max-width: calc(50% - 10px);
   }
 
   .product .bloco1 img {
@@ -386,15 +387,15 @@ h3 {
   }
 
   #menu {
-    right: 5%;
+    right: 2%;
   }
 
   #menu ul{
-    flex-direction: column;
+    
   }
   
   #menu ul li {
-    margin: 3px;
+    margin: 2px;
     padding: 6px 6px;
   }
   #menu ul li img{
@@ -402,12 +403,8 @@ h3 {
     margin: 0 3px;
   }
 
-  .product .bloco2 {
-    padding-bottom: 60px;
-  }
-
   .product .bloco2 p {
-    font-size: 2.0em;
+    font-size: 1.3em;
   }
   #redes-sociais {
     position: fixed;
@@ -426,12 +423,17 @@ h3 {
     min-height: 110px;
   }
 
+  .product {
+    flex: 1 1 calc(100% - 10px);
+    max-width: calc(100% - 10px);
+  }
+
   .product .bloco2 {
-    padding-bottom: 40px;
+   
   }
 
   .product .bloco2 p {
-    font-size: 1.8em;
+    font-size: 1.2em;
   }
 }
 
