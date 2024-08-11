@@ -297,9 +297,7 @@ h3 {
 }
 
 .product .bloco2 {
-  display: flex;
   align-items: center;
-  justify-content: space-around;
   background-color: #bb2948;
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3), 0 8px 16px rgba(0, 0, 0, 0.2);
 }
@@ -307,25 +305,30 @@ h3 {
 .product .bloco2 .p1{
   text-decoration: line-through;
   color: rgba(242, 239, 239, 0.7);
-  font-size: 1em;
+  font-size: 0.9em;
 }
 
 .product .bloco2 p {
+  margin: 5px 5%;
   color: #eae8e8;
-  font-size: 1em;
+  font-size: 1.4em;
   letter-spacing: 3px;
   font-family: "Roboto", sans-serif;
   font-weight: 600;
 }
-
-.preco {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
-  border-radius: 4px;
-  margin-top: 5px;
+.preco{
+  display: flex;
+}
+.product .bloco2 .desconto{
+  font-size: 0.9em;
+  padding: 2px 5px;
+  display: flex;
+  background-color: #46b225;
+  display: inline;
+  border-radius: 5px;
+}
+.desconto i{
+  font-size: 0.9em;
 }
 
 /* Media Queries para responsividade */
